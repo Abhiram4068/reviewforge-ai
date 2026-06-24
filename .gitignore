@@ -1,0 +1,50 @@
+# ==========================================
+# ReviewForge AI Git Ignore Rules
+# ==========================================
+
+# --- Python / Backend Caches & virtual environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+ENV/
+env/
+
+# --- Node / Frontend dependencies & builds ---
+node_modules/
+frontend/node_modules/
+/dist/
+frontend/dist/
+.eslintcache
+.pnpm-debug.log*
+
+# --- Environment secrets (Do not commit secrets) ---
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# --- Databases ---
+*.db
+*.sqlite
+*.sqlite3
+reviewforge.db
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
